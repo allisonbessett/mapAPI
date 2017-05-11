@@ -7,16 +7,18 @@ $(document).ready(function () {
   var google;
   function initMap() {
      console.log("working");
-    var uluru = {lat: -25.363, lng: 131.044};
+    var lulea = {lat: 65.5848,  lng: 22.1567};
     var map = new google.maps.Map(document.getElementById('google-map'), {
       zoom: 4,
-      center: uluru
+      center: lulea
     });
     var marker = new google.maps.Marker({
-      position: uluru,
+      position: lulea,
       map: map
     });
   }
+  initMap();
+  });
 //    var mapOptions = { 
 //      center: new google.maps.LatLng(65.5848, 22.1567),
 //      mapTypeId: google.maps.mapTypeId.ROADMAP, 
@@ -33,9 +35,9 @@ $(document).ready(function () {
 //  }
 //  
 //  window.onload = loadScript;
+
     
-    
-    
+  
 //    var googleMap = new google.maps.Map($("#google-map")[0]);
 //    googleMap.setCenter({lat: 65.5848, lng: 22.1567});
 //    googleMap.setZoom(10);
@@ -52,4 +54,3 @@ $(document).ready(function () {
 //      information.open(googleMap, marker);
 //    });
 //  });
-});
