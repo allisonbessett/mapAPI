@@ -3,20 +3,33 @@
 <html lang = "en">
   <head>
     <title>Map</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" type="text/css" href="mapAPI.css">
   </head>
   
   <body>
+    <h2>My European Map</h2>
     <form>
       <select id="select" form="form"> 
         <option value="1">Lulea, Sweden</option>
           <option value="2">Oulu, Finland</option>
           <option value="3">North Cape, Norway</option>
       </select>
-      Latitude <input type="textbox" id="textfield">
-      Longitude <input type="textbox" id="textfield">
+      Latitude <input type="textbox" class="textfield">
+      Longitude <input type="textbox" class="textfield">
       Zoom <input type="textbox" id="textfield">
       <input type="submit" value="submit" id="submit">
     </form>
+    
+    <div id="google-map"></div>
+    
+    <script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+    
+   <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCBEqEH0UUiFxHp_aturLxlQQqQNL5W4DM&callback=initMap"></script>
     <script src="mapAPI.js"></script>
   </body>
 </html>
